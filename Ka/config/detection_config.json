@@ -1,0 +1,10 @@
+{
+  "confidence_threshold": 0.5,
+  "iou_threshold": 0.45,
+  "device": "cpu",
+  "model_size": "s",
+  "inference_interval": 1,
+  "critical_classes": ["person", "knife", "gun", "backpack"],
+  "track_max_age": 30,
+  "track_min_hits": 3
+}

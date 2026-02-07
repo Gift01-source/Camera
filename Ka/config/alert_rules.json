@@ -1,0 +1,40 @@
+{
+  "enable_alerts": true,
+  "alert_channels": {
+    "email": false,
+    "slack": false,
+    "webhook": false
+  },
+  "alert_rules": {
+    "unknown_face": {
+      "enabled": true,
+      "severity": "critical",
+      "record": true,
+      "notify": true
+    },
+    "motion_detected": {
+      "enabled": true,
+      "severity": "medium",
+      "record": false,
+      "notify": false
+    },
+    "loitering": {
+      "enabled": true,
+      "severity": "high",
+      "threshold_seconds": 60,
+      "record": true,
+      "notify": true
+    },
+    "unauthorized_area": {
+      "enabled": false,
+      "severity": "critical",
+      "zones": [],
+      "record": true,
+      "notify": true
+    }
+  },
+  "suppression": {
+    "duplicate_alert_timeout": 300,
+    "min_people_for_alert": 1
+  }
+}

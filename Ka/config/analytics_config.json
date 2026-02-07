@@ -1,0 +1,22 @@
+{
+  "enable_people_counting": true,
+  "enable_heatmap": true,
+  "heatmap_resolution": [640, 480],
+  "statistics_interval": 60,
+  "dwell_time_threshold": 10,
+  "people_count_sensitivity": "medium",
+  "tracking": {
+    "algorithm": "centroid",
+    "max_distance": 50,
+    "min_consecutive_frames": 3
+  },
+  "queue_analysis": {
+    "enabled": true,
+    "queue_regions": []
+  },
+  "conversion_tracking": {
+    "enabled": false,
+    "entry_region": [],
+    "purchase_region": []
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "camera": {
+    "camera_index": 0,
+    "resolution": [1920, 1080],
+    "fps": 30,
+    "flip": false,
+    "rotation": 0,
+    "frame_buffer_size": 30
+  },
+  "detection": {
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.45,
+    "device": "cpu",
+    "model_size": "s",
+    "inference_interval": 1
+  },
+  "security": {
+    "enable_face_recognition": true,
+    "enable_motion_detection": true,
+    "motion_threshold": 5.0,
+    "record_on_alert": true,
+    "recording_duration": 30,
+    "enable_alerts": true,
+    "alert_email": "",
+    "alert_slack_webhook": ""
+  },
+  "analytics": {
+    "enable_people_counting": true,
+    "enable_heatmap": true,
+    "heatmap_resolution": [640, 480],
+    "statistics_interval": 60,
+    "dwell_time_threshold": 10
+  },
+  "storage": {
+    "video_storage_path": "./videos",
+    "max_storage_gb": 500,
+    "retention_days": 30,
+    "cloud_backup": false,
+    "aws_s3_bucket": ""
+  },
+  "api": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": false,
+    "cors_origins": "*"
+  }
+}
